@@ -1,0 +1,26 @@
+Cooldown Kode Verifikasi selalu reset pada saat register
+---------------------------------------------------------
+Priority: Low
+Components: Website
+Device: None
+Severity: Low
+Version: None 
+Status: Open
+
+Description:
+Steps:
+1. Buka Website Kumparan
+2. Klik tombol Masuk/Login
+3. Klik "Daftar Sekarang!"
+4. Masukkan Email pada textbox
+5. Klik tombol register
+6. Saat berada di Verification page, klik tombol Back pada browser
+7. Lalu saat berada di Register page, ulangi kembali step 4-6
+8. Maka Cooldown akan ter-reset menjadi 60sec
+
+Expected Result:
+Seharusnya jika User sedang melakukan Verifikasi email dan dalam waktu cooldown, cooldown tersebut
+tidak ter-reset.
+
+Actual Result:
+Cooldown Verifikasi email ter-reset jika melakukan step diatas
